@@ -1,0 +1,72 @@
+{
+	"production": false,
+	"srcRoot": "../src/",
+	"distRoot": "../dist/",
+	"browserSync": {
+		"info": "https://www.browsersync.io/docs/options",
+		"server": {
+			"baseDir": "../dist/"
+		}
+	},
+	"templates": {
+		"watch": [
+			"../src/**/*.{htm,html,php}",
+			"../src/*.{htm,html,php}"
+		],
+		"entries": [
+			"../src/templates/*.{htm,html}"
+		],
+		"injectPartials": {
+			"removeTags": true,
+			"start": "<!-- partial \"{{path}}\"",
+			"end": "-->"
+		}
+	},
+	"assets": {
+		"watch": [
+			"../src/assets/*.*",
+			"../src/assets/**/*.*"
+		]
+	},
+	"css": {
+		"watch": [
+			"../src/scss/*.scss",
+			"../src/scss/**/*.scss"
+		],
+		"main": "../src/scss/main.scss",
+		"autoprefixerOptions": {
+			"browsers": [
+				"last 2 versions",
+				"ie >= 9",
+				"and_chr >= 2.3"
+			]
+		}
+	},
+	"js": {
+		"vendorsWatch": [
+			"../src/js-vendors/*.js",
+			"../src/js-vendors/**/*.js"
+		],
+		"vendorsConcat": {
+			"js/vendors.js": [
+				"../src/js-vendors/jquery/jquery-3.2.1.js",
+				"../src/js-vendors/dat-gui/dat.gui.min.js",
+				"../src/js-vendors/gsap/TweenLite.js",
+				"../src/js-vendors/gsap/TimelineLite.js",
+				"../src/js-vendors/gsap/plugins/CSSPlugin.js",
+				"../src/js-vendors/gsap/plugins/ColorPropsPlugin.js",
+				"../src/js-vendors/gsap/easing/EasePack.js",
+				"../src/js-vendors/fss/fss.js"
+			]
+		},
+		"execWatch": [
+			"../src/js-exec/*.js",
+			"../src/js-exec/**/*.js"
+		],
+		"execConcat": {
+			"js/exec.js": [
+				"../src/js-exec/main.js"
+			]
+		}
+	}
+}

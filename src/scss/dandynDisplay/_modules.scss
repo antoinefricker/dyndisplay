@@ -1,0 +1,104 @@
+footer#page-footer {
+	.gr-row > * {
+		@include single-line-centered($layout-footer-height);
+	}
+	#footer-date {
+		
+	}
+	#footer-clock {
+		text-align: right;
+	}
+}
+
+header#page-header {
+	h1 {
+		margin: 0;
+		@include single-line-centered($layout-aside-cell-size);
+	}
+}
+
+aside {
+	
+	.aside-floor {
+		@extend .gr-row;
+		
+		.aside-floor__index {
+			@extend .gr-cell;
+			width: 80px;
+			
+			@include single-line-centered($layout-aside-cell-size);
+			vertical-align: top;
+			text-align: center;
+			
+			font-family: $museo_sans300;
+			font-weight: normal;
+			font-size: 70px;
+		}
+		.aside-floor__entreprises {
+			@extend .gr-cell;
+			width: 100%;
+			
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			
+			padding-left: $layout-hpadding;
+			
+			li {
+				display: inline-flex;
+				width: $layout-aside-cell-size;
+				height: $layout-aside-cell-size;
+				margin: 0 $layout-hpadding $layout-hpadding 0;
+				
+				@if ($production == false) {
+					border: rgba(white, .3) 1px solid;
+				}
+			}
+		}
+	}
+	
+}
+
+#background-anim-controls {
+	@if($production){
+		display: none;
+	}
+	* {
+		vertical-align: unset;
+		box-sizing: unset;
+	}
+	&, p, li {
+		font-size: 12px;
+	}
+	
+}
+#page-ui {
+	&.ui--hidden {
+		transform: translateX(-100vw);
+	}
+}
+
+main{
+	padding-left: $layout-hpadding;
+	overflow: auto;
+}
+
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	
+	thead{
+		tr{
+			border-bottom: 1px solid rgba(white, .2);
+		}
+		th{
+			@extend h5;
+		}
+	}
+	
+	th, td{
+		text-align:left;
+		padding: 18px;
+	}
+}

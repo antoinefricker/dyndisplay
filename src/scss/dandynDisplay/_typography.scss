@@ -1,0 +1,99 @@
+@mixin headings-margins($basis: 10px, $chained-heading-margin: null){
+	
+	@if($chained-heading-margin){
+		&{
+			margin: (2 * $basis) 0 0 0;
+		}
+		& + *{
+			margin-top: $basis;
+		}
+		& + h1, & + h2, & + h3, & + h4, & + h5{
+			margin-top: $chained-heading-margin !important;
+		}
+	}
+	@else{
+		&{
+			margin: (2 * $basis) 0 $basis 0;
+		}
+	}
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+article{
+	& > *:first-child{
+		margin-top:0;
+	}
+}
+// header title
+h1{
+	box-sizing: border-box;
+	
+	font-family: $museo_sans700;
+	font-weight: normal;
+	font-size: 48px;
+	text-transform: uppercase;
+	
+	@include headings-margins(18px);
+	
+	.subtitle{
+		display: inline-block;
+		padding-left: $layout-hpadding;
+		
+		font-family: $museo_sans100;
+		font-weight: normal;
+		font-size: 38px;
+		text-transform: none;
+	}
+}
+
+// main content title
+h2{
+	box-sizing: border-box;
+	
+	font-family: $museo_sans100;
+	font-weight: normal;
+	font-size: 44px;
+	
+	@include headings-margins(18px);
+}
+// card title
+h3{
+	font-family: $museo_sans100;
+	font-weight: normal;
+	font-size: 42px;
+	
+	@include headings-margins(14px);
+}
+// card subtitle
+h4{
+	font-family: $museo_sans500;
+	font-weight: normal;
+	font-size: 26px;
+	text-transform: uppercase;
+	
+	@include headings-margins(0, -4px);
+}
+// th
+h5{
+	font-family: $museo_sans500;
+	font-weight: normal;
+	font-size: 34px;
+	
+	@include headings-margins(14px);
+}
+body, p, li{
+	font-family: $museo_sans300;
+	font-weight: normal;
+	font-size: $text-size;
+	color: $text-color;
+}
+
+p, ul, table{
+	& + p, & + table, & + ul{
+		margin-top: 8px;
+	}
+}

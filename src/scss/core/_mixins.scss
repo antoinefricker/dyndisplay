@@ -1,0 +1,12 @@
+%clearfix{
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin single-line-centered($size: 24px){
+	height: $size;
+	line-height: $size;
+}

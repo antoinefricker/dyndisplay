@@ -1,0 +1,30 @@
+{
+  "name": "kopfstoss",
+  "version": "1.0.0",
+  "description": "kopfstoss template",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "antoine fricker <antoine.fricker@gmail.com>",
+  "license": "MIT",
+  "homepage": "",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "latest",
+    "gulp-concat-multi": "latest",
+    "gulp-csso": "latest",
+    "gulp-if": "latest",
+    "gulp-inject-partials": "latest",
+    "gulp-replace-task": "^0.11.0",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest"
+  },
+  "dependencies": {},
+  "keywords": []
+}

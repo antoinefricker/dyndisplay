@@ -1,0 +1,255 @@
+@font-face {
+  font-family: 'museo_sans700';
+  src: url("../fonts/museosans_700.woff2") format("woff2"), url("../fonts/museosans_700.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'museo_sans500';
+  src: url("../fonts/museosans_500.woff2") format("woff2"), url("../fonts/museosans_500.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'museo_sans300';
+  src: url("../fonts/museosans_300.woff2") format("woff2"), url("../fonts/museosans_300.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'museo_sans100';
+  src: url("../fonts/museosans_100.woff2") format("woff2"), url("../fonts/museosans_100.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+body {
+  display: block;
+  color: #000;
+  font-size: 16px;
+  background-color: white; }
+
+ol, ul {
+  list-style: none; }
+
+.gr-row, aside .aside-floor {
+  position: relative;
+  display: table;
+  width: 100%; }
+
+.gr-cell, .gr6-1, .gr6-2, .gr6-3, .gr6-4, .gr6-5, .gr6-6, aside .aside-floor .aside-floor__index, aside .aside-floor .aside-floor__entreprises {
+  display: table-cell;
+  width: 100%; }
+
+.gr6-1 {
+  width: 16.66667%;
+  content: "gr6-1"; }
+
+.gr6-2 {
+  width: 33.33333%;
+  content: "gr6-2"; }
+
+.gr6-3 {
+  width: 50%;
+  content: "gr6-3"; }
+
+.gr6-4 {
+  width: 66.66667%;
+  content: "gr6-4"; }
+
+.gr6-5 {
+  width: 83.33333%;
+  content: "gr6-5"; }
+
+body {
+  background-color: #333; }
+
+header#page-header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100px;
+  padding: 0 20px; }
+
+footer#page-footer {
+  position: fixed;
+  left: 0;
+  right: 400px;
+  bottom: 0;
+  height: 100px;
+  padding: 0 20px; }
+
+aside#page-aside {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  bottom: 100px;
+  width: 400px; }
+
+main {
+  position: absolute;
+  left: 0;
+  right: 430px;
+  top: 100px;
+  bottom: 100px; }
+
+#background-anim {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+#background-anim-controls {
+  position: fixed;
+  z-index: 1000; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+article > *:first-child {
+  margin-top: 0; }
+
+h1 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "museo_sans700", Arial, Sans-Serif;
+  font-weight: normal;
+  font-size: 48px;
+  text-transform: uppercase; }
+  h1 {
+    margin: 36px 0 18px 0; }
+  h1 .subtitle {
+    display: inline-block;
+    padding-left: 20px;
+    font-family: "museo_sans100", Arial, Sans-Serif;
+    font-weight: normal;
+    font-size: 38px;
+    text-transform: none; }
+
+h2 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "museo_sans100", Arial, Sans-Serif;
+  font-weight: normal;
+  font-size: 44px; }
+  h2 {
+    margin: 36px 0 18px 0; }
+
+h3 {
+  font-family: "museo_sans100", Arial, Sans-Serif;
+  font-weight: normal;
+  font-size: 42px; }
+  h3 {
+    margin: 28px 0 14px 0; }
+
+h4 {
+  font-family: "museo_sans500", Arial, Sans-Serif;
+  font-weight: normal;
+  font-size: 26px;
+  text-transform: uppercase; }
+  h4 {
+    margin: 0 0 0 0; }
+  h4 + * {
+    margin-top: 0; }
+  h4 + h1, h4 + h2, h4 + h3, h4 + h4, h4 + h5, table thead h4 + th {
+    margin-top: -4px !important; }
+
+h5, table thead th {
+  font-family: "museo_sans500", Arial, Sans-Serif;
+  font-weight: normal;
+  font-size: 34px; }
+  h5, table thead th {
+    margin: 28px 0 14px 0; }
+
+body, p, li {
+  font-family: "museo_sans300", Arial, Sans-Serif;
+  font-weight: normal;
+  font-size: 30px;
+  color: #fff; }
+
+p + p, p + table, p + ul, ul + p, ul + table, ul + ul, table + p, table + table, table + ul {
+  margin-top: 8px; }
+
+footer#page-footer .gr-row > *, footer#page-footer aside .aside-floor > *, aside footer#page-footer .aside-floor > * {
+  height: 100px;
+  line-height: 100px; }
+
+footer#page-footer #footer-clock {
+  text-align: right; }
+
+header#page-header h1 {
+  margin: 0;
+  height: 120px;
+  line-height: 120px; }
+
+aside .aside-floor .aside-floor__index {
+  width: 80px;
+  height: 120px;
+  line-height: 120px;
+  vertical-align: top;
+  text-align: center;
+  font-family: "museo_sans300", Arial, Sans-Serif;
+  font-weight: normal;
+  font-size: 70px; }
+
+aside .aside-floor .aside-floor__entreprises {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 20px; }
+  aside .aside-floor .aside-floor__entreprises li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 120px;
+    height: 120px;
+    margin: 0 20px 20px 0;
+    border: rgba(255, 255, 255, 0.3) 1px solid; }
+
+#background-anim-controls * {
+  vertical-align: unset;
+  -webkit-box-sizing: unset;
+          box-sizing: unset; }
+
+#background-anim-controls, #background-anim-controls p, #background-anim-controls li {
+  font-size: 12px; }
+
+#page-ui.ui--hidden {
+  -webkit-transform: translateX(-100vw);
+      -ms-transform: translateX(-100vw);
+          transform: translateX(-100vw); }
+
+main {
+  padding-left: 20px;
+  overflow: auto; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%; }
+  table thead tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+  table th, table td {
+    text-align: left;
+    padding: 18px; }

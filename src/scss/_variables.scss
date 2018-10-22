@@ -1,0 +1,62 @@
+$production: false;
+
+$body-bg-color: #333;
+$text-color: #fff;
+$text-size: 30px;
+
+$color-blue: #4fc4e8;
+
+// --------------------------------------------------------------------------------------------
+//	GRID
+
+$gr-cols: 6;
+
+// --------------------------------------------------------------------------------------------
+//	LAYOUT
+
+$layout-header-height: 100px;
+$layout-footer-height: 100px;
+$layout-aside-width: 400px;
+$layout-aside-margin: 30px;
+
+$layout-hpadding: 20px;
+
+$layout-aside-cell-size: 120px;
+
+ 
+// --------------------------------------------------------------------------------------------
+//	FONTS
+
+@font-face {
+	font-family: 'museo_sans700';
+	src: url('../fonts/museosans_700.woff2') format('woff2'),
+	url('../fonts/museosans_700.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'museo_sans500';
+	src: url('../fonts/museosans_500.woff2') format('woff2'),
+	url('../fonts/museosans_500.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'museo_sans300';
+	src: url('../fonts/museosans_300.woff2') format('woff2'),
+	url('../fonts/museosans_300.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'museo_sans100';
+	src: url('../fonts/museosans_100.woff2') format('woff2'),
+	url('../fonts/museosans_100.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$museo_sans100: 'museo_sans100', Arial, Sans-Serif;
+$museo_sans300: 'museo_sans300', Arial, Sans-Serif;
+$museo_sans500: 'museo_sans500', Arial, Sans-Serif;
+$museo_sans700: 'museo_sans700', Arial, Sans-Serif;
