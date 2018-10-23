@@ -1,7 +1,9 @@
 @import 'variables';
+
+@import 'vendors/weather-icons/weather-icons';
  
 @import 'core/reset';
-@import 'core/mixins';
+@import 'core/mixins'; 
 @import 'core/grid';
 
 @import 'dandynDisplay/layout';

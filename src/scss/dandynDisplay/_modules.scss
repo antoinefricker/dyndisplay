@@ -18,12 +18,16 @@ header#page-header {
 }
 
 aside {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
 	
 	.aside-floor {
 		@extend .gr-row;
 		
 		.aside-floor__index {
-			@extend .gr-cell;
+			@extend .gr6-cell;
 			width: 80px;
 			
 			@include single-line-centered($layout-aside-cell-size);
@@ -35,7 +39,7 @@ aside {
 			font-size: 70px;
 		}
 		.aside-floor__entreprises {
-			@extend .gr-cell;
+			@extend .gr6-cell;
 			width: 100%;
 			
 			display: flex;
@@ -60,7 +64,7 @@ aside {
 }
 
 #background-anim-controls {
-	@if($production){
+	@if ($production) {
 		display: none;
 	}
 	* {
@@ -72,33 +76,211 @@ aside {
 	}
 	
 }
+
 #page-ui {
 	&.ui--hidden {
 		transform: translateX(-100vw);
 	}
 }
 
-main{
+main {
 	padding-left: $layout-hpadding;
 	overflow: auto;
+	
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-content: stretch;
+	align-items: stretch;
+	
+	& > .gr-row {
+		flex: 1 1 100%;
+		display: inline-flex;
+		
+		$border-color: rgba(white, .3);
+		$border-thickness: 1px;
+		$border-delta: 40px;
+		$border-default: none;
+		
+		%vert-border {
+			&:before {
+				content: '';
+				position: absolute;
+				width: $border-thickness;
+				background-color: $border-color;
+			}
+		}
+		@mixin vert-border {
+			@extend %vert-border;
+			&:before {
+				@content;
+			}
+		}
+		%horz-border {
+			&:after {
+				content: '';
+				position: absolute;
+				height: $border-thickness;
+				background-color: $border-color;
+			}
+		}
+		@mixin horz-border {
+			@extend %horz-border;
+			&:after {
+				@content;
+			}
+		}
+		
+		
+		&{
+			border: red 1px solid; // show bad configuration
+			& > [class^="gr6-"] {
+				position: relative;
+				height: 100%;
+				border: red 1px solid; // show bad configuration
+			}
+		}
+		&:first-child:not(:only-child) {
+			border: none;
+			& > [class^="gr6-"] {
+				// bottom [d, 0], right [d, 0]
+				&:first-child:not(:only-child) {
+					border: $border-default;
+					
+					@include horz-border {
+						left: $border-delta;
+						right: 0;
+						bottom: 0;
+					}
+					
+					@include vert-border {
+						right: 0;
+						top: $border-delta;
+						bottom: 0;
+					}
+				}
+				// bottom [0, d]
+				&:last-child:not(:only-child) {
+					border: $border-default;
+					
+					@include horz-border {
+						left: 0;
+						right: $border-delta;
+						bottom: 0;
+					}
+				}
+				// bottom border [d, d]
+				&:only-child {
+					border: $border-default;
+					
+					@include horz-border {
+						left: $border-delta;
+						right: $border-delta;
+						bottom: 0;
+					}
+				}
+			}
+		}
+		&:last-child:not(:only-child){
+			border: none;
+			
+			& > [class^="gr6-"] {
+				&{
+					border: $border-default;
+				}
+				// right [0, d]
+				&:not(:last-child) {
+					border: $border-default;
+					@include vert-border {
+						right: 0;
+						top: 0;
+						bottom: $border-delta;
+					}
+				}
+			}
+		}
+		&:only-child{
+			border: none;
+			& > [class^="gr6-"] {
+				border: none;
+			}
+		}
+	}
+	
+	[class^="gr6-"] {
+		//border: #8affe7 1px dotted;
+	}
 }
 
-table{
+.columns-spacer{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	height: 100%;
+	
+	&{
+		justify-content: space-evenly;
+	}
+	&.columns-spacer--space-around{
+		justify-content: space-around;
+	}
+	&.columns-spacer--space-between{
+		justify-content: space-between;
+	}
+	&.columns-spacer--center{
+		justify-content: center;
+	}
+	
+	& > .columns-spacer__row{
+		flex: 0 0 auto;
+	}
+}
+
+table {
+	$table-line-height: 66px;
+	
 	border-collapse: collapse;
 	border-spacing: 0;
 	width: 100%;
 	
-	thead{
-		tr{
+	thead {
+		tr {
 			border-bottom: 1px solid rgba(white, .2);
 		}
-		th{
+		th {
 			@extend h5;
 		}
 	}
 	
-	th, td{
-		text-align:left;
-		padding: 18px;
+	tr{
+		height: $table-line-height;
+	}
+	th, td {
+		text-align: left;
+		padding: 0 18px;
+		height: $table-line-height;
+		line-height: $table-line-height;
+	}
+	td {
+		font-family: $museo_sans100;
+		font-weight: normal;
+		
+		&.time-info{
+			$icon-size: 40px;
+			
+			position: relative;
+			padding-left: $icon-size + 10px;
+			&:before{
+				position: absolute;
+				left: 0;
+				top: 44%;
+				transform: translateY(-50%);
+				background-image: url('../mm/time.png');
+				
+				content: '';
+				width: $icon-size;
+				height: $icon-size;
+			}
+		}
 	}
 }
