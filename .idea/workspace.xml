@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97bfe785-e82a-48f3-b345-bd3a6b224ce9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/scss/dandynDisplay/_page-meeting.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/scss/dandynDisplay/_page-meteo.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/scss/dandynDisplay/_page-welcome.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/meeting-room.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/meteo-welcome.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/contents/blocks.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/contents/kitchen-sink.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/templates/contents/station.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/assets/css/main.css" afterPath="$PROJECT_DIR$/dist/assets/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/kitchen-sink.html" afterPath="$PROJECT_DIR$/dist/kitchen-sink.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/station.html" afterPath="$PROJECT_DIR$/dist/station.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/_variables.scss" afterPath="$PROJECT_DIR$/src/scss/_variables.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/core/_grid.scss" afterPath="$PROJECT_DIR$/src/scss/core/_grid.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/dandynDisplay/_modules.scss" afterPath="$PROJECT_DIR$/src/scss/dandynDisplay/_modules.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/dandynDisplay/_typography.scss" afterPath="$PROJECT_DIR$/src/scss/dandynDisplay/_typography.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/main.scss" afterPath="$PROJECT_DIR$/src/scss/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/blocks.html" afterPath="$PROJECT_DIR$/src/templates/blocks.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/index.html" afterPath="$PROJECT_DIR$/src/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/kitchen-sink.html" afterPath="$PROJECT_DIR$/src/templates/kitchen-sink.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/station.html" afterPath="$PROJECT_DIR$/src/templates/station.html" />
-    </list>
+    <list default="true" id="97bfe785-e82a-48f3-b345-bd3a6b224ce9" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,8 +49,8 @@
       <file leaf-file-name="_page-meeting.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scss/dandynDisplay/_page-meeting.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+            <state relative-caret-position="561">
+              <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
               <folding>
                 <marker date="1540307830694" expanded="false" signature="486:544" ph="{...}" />
                 <marker date="1540307830694" expanded="false" signature="563:620" ph="{...}" />
@@ -211,6 +188,9 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/gulp/node_modules" />
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
@@ -485,16 +465,16 @@
       <workItem from="1540136206233" duration="23960000" />
       <workItem from="1540236019873" duration="598000" />
       <workItem from="1540267627703" duration="10030000" />
-      <workItem from="1540296029695" duration="11553000" />
+      <workItem from="1540296029695" duration="11749000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46141000" />
+    <option name="totallyTimeSpent" value="46337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1610" height="1417" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972796" sideWeight="0.5045767" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3083871" sideWeight="0.47597253" order="0" side_tool="false" content_ui="combo" />
@@ -502,7 +482,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.330781" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.330781" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972796" sideWeight="0.49542335" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -951,8 +931,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scss/dandynDisplay/_page-meeting.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        <state relative-caret-position="561">
+          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
           <folding>
             <marker date="1540307830694" expanded="false" signature="486:544" ph="{...}" />
             <marker date="1540307830694" expanded="false" signature="563:620" ph="{...}" />
