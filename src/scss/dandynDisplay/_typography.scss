@@ -54,11 +54,12 @@ h1{
 h2{
 	box-sizing: border-box;
 	
-	font-family: $museo_sans100;
+	font-family: $museo_sans700;
 	font-weight: normal;
-	font-size: 44px;
+	font-size: 48px;
 	
 	@include headings-margins(18px);
+	text-shadow: rgba(white, .4s) 1px 0 6px;
 }
 // card title
 h3{

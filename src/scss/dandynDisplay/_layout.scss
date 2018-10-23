@@ -7,8 +7,8 @@ header#page-header{
 	
 	position: fixed;
 	left: 0;
+	right: $layout-aside-width;
 	top: 0;
-	width: 100vw;
 	height: $layout-header-height;
 	
 	padding: 0 $layout-hpadding;
@@ -29,8 +29,8 @@ aside#page-aside{
 	
 	position: absolute;
 	right: 0;
-	top: $layout-header-height;
-	bottom: $layout-footer-height;
+	top: 0;
+	bottom: 0;
 	width: $layout-aside-width;
 }
 main{

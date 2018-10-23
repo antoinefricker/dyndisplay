@@ -7,7 +7,7 @@
 }
 
 
-.gr-cell{
+.gr6-cell{
 	display: table-cell;
 	width:100%;
 	//border: greenyellow 1px solid;
@@ -29,5 +29,5 @@ $all-gr-cell: '';
 }
 
 #{$all-gr-cell}{
-	@extend .gr-cell;
+	@extend .gr6-cell;
 }
