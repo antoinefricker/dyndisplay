@@ -3,10 +3,14 @@
 @import 'vendors/weather-icons/weather-icons';
  
 @import 'core/reset';
-@import 'core/mixins'; 
+@import 'core/mixins';
 @import 'core/grid';
 
 @import 'dandynDisplay/layout';
 @import 'dandynDisplay/typography';
 @import 'dandynDisplay/modules';
+
+@import 'dandynDisplay/page-meteo';
+@import 'dandynDisplay/page-welcome';
+@import 'dandynDisplay/page-meeting';
  

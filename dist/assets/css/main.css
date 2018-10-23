@@ -2,25 +2,25 @@
 @font-face {
   font-family: 'museo_sans700';
   src: url("../fonts/museosans_700.woff2") format("woff2"), url("../fonts/museosans_700.woff") format("woff");
-  font-weight: normal;
+  font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: 'museo_sans500';
   src: url("../fonts/museosans_500.woff2") format("woff2"), url("../fonts/museosans_500.woff") format("woff");
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'museo_sans300';
   src: url("../fonts/museosans_300.woff2") format("woff2"), url("../fonts/museosans_300.woff") format("woff");
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'museo_sans100';
   src: url("../fonts/museosans_100.woff2") format("woff2"), url("../fonts/museosans_100.woff") format("woff");
-  font-weight: normal;
+  font-weight: 100;
   font-style: normal; }
 
 /*!
@@ -1698,34 +1698,37 @@ body {
 ol, ul {
   list-style: none; }
 
-.gr-row, aside .aside-floor {
+.gr-row, aside .aside-floor, #page-welcome .welcome-board > div {
   position: relative;
   display: table;
   width: 100%; }
 
-.gr6-cell, .gr6-1, .gr6-2, .gr6-3, .gr6-4, .gr6-5, .gr6-6, aside .aside-floor .aside-floor__index, aside .aside-floor .aside-floor__entreprises {
+.gr6-cell, aside .aside-floor .aside-floor__index, aside .aside-floor .aside-floor__entreprises {
   display: table-cell;
   width: 100%; }
 
 .gr6-1 {
-  width: 16.66667%;
+  width: 16.66667% !important;
   content: "gr6-1"; }
 
-.gr6-2 {
-  width: 33.33333%;
+.gr6-2, #page-welcome .welcome-board .welcome-board__who {
+  width: 33.33333% !important;
   content: "gr6-2"; }
 
 .gr6-3 {
-  width: 50%;
+  width: 50% !important;
   content: "gr6-3"; }
 
-.gr6-4 {
-  width: 66.66667%;
+.gr6-4, #page-welcome .welcome-board .welcome-board__message {
+  width: 66.66667% !important;
   content: "gr6-4"; }
 
 .gr6-5 {
-  width: 83.33333%;
+  width: 83.33333% !important;
   content: "gr6-5"; }
+
+.gr6-1, .gr6-2, #page-welcome .welcome-board .welcome-board__who, .gr6-3, .gr6-4, #page-welcome .welcome-board .welcome-board__message, .gr6-5, .gr6-6 {
+  display: table-cell; }
 
 body {
   background-color: #333; }
@@ -1823,7 +1826,7 @@ h4 {
   h4 + * {
     margin-top: 0; }
   h4 + h1, h4 + h2, h4 + h3, h4 + h4, h4 + h5, table thead h4 + th {
-    margin-top: -4px !important; }
+    margin-top: -2px !important; }
 
 h5, table thead th {
   font-family: "museo_sans500", Arial, Sans-Serif;
@@ -1841,7 +1844,10 @@ body, p, li {
 p + p, p + table, p + ul, ul + p, ul + table, ul + ul, table + p, table + table, table + ul {
   margin-top: 8px; }
 
-footer#page-footer .gr-row > *, footer#page-footer aside .aside-floor > *, aside footer#page-footer .aside-floor > * {
+em {
+  font-style: normal; }
+
+footer#page-footer .gr-row > *, footer#page-footer aside .aside-floor > *, aside footer#page-footer .aside-floor > *, footer#page-footer #page-welcome .welcome-board > div > *, #page-welcome footer#page-footer .welcome-board > div > * {
   height: 100px;
   line-height: 100px; }
 
@@ -1926,66 +1932,66 @@ main {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch; }
-  main > .gr-row, aside main > .aside-floor {
+  main > .gr-row, aside main > .aside-floor, #page-welcome main.welcome-board > div {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex; }
-    main > .gr-row:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:before, aside main > .aside-floor main > .gr-row:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:before, aside main > .gr-row main > .aside-floor:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:before, aside main > .aside-floor:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:before, main > .gr-row:last-child:not(:only-child) > :not(:last-child)[class^="gr6-"]:before, aside main > .aside-floor main > .gr-row:last-child:not(:only-child) > :not(:last-child)[class^="gr6-"]:before, aside main > .gr-row main > .aside-floor:last-child:not(:only-child) > :not(:last-child)[class^="gr6-"]:before, aside main > .aside-floor:last-child:not(:only-child) > :not(:last-child)[class^="gr6-"]:before {
+    main > .gr-row:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:before, aside main > .aside-floor main > .gr-row:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:before, #page-welcome main.welcome-board > div main > .gr-row:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:before, aside main > .gr-row main > .aside-floor:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:before, aside main > .aside-floor:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:before, #page-welcome main.welcome-board > div aside main > .aside-floor:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:before, aside #page-welcome main.welcome-board > div main > .aside-floor:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:before, #page-welcome main > .gr-row main.welcome-board > div:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:before, #page-welcome aside main > .aside-floor main.welcome-board > div:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:before, #page-welcome main.welcome-board > div:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:before, main > .gr-row:last-child:not(:only-child) > :not(:last-child)[class^="gr6-"]:before, aside main > .aside-floor main > .gr-row:last-child:not(:only-child) > :not(:last-child)[class^="gr6-"]:before, #page-welcome main.welcome-board > div main > .gr-row:last-child:not(:only-child) > :not(:last-child)[class^="gr6-"]:before, aside main > .gr-row main > .aside-floor:last-child:not(:only-child) > :not(:last-child)[class^="gr6-"]:before, aside main > .aside-floor:last-child:not(:only-child) > :not(:last-child)[class^="gr6-"]:before, #page-welcome main.welcome-board > div aside main > .aside-floor:last-child:not(:only-child) > :not(:last-child)[class^="gr6-"]:before, aside #page-welcome main.welcome-board > div main > .aside-floor:last-child:not(:only-child) > :not(:last-child)[class^="gr6-"]:before, #page-welcome main > .gr-row main.welcome-board > div:last-child:not(:only-child) > :not(:last-child)[class^="gr6-"]:before, #page-welcome aside main > .aside-floor main.welcome-board > div:last-child:not(:only-child) > :not(:last-child)[class^="gr6-"]:before, #page-welcome main.welcome-board > div:last-child:not(:only-child) > :not(:last-child)[class^="gr6-"]:before {
       content: '';
       position: absolute;
       width: 1px;
       background-color: rgba(255, 255, 255, 0.3); }
-    main > .gr-row:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:after, aside main > .aside-floor main > .gr-row:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:after, aside main > .gr-row main > .aside-floor:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:after, aside main > .aside-floor:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:after, main > .gr-row:first-child:not(:only-child) > :not(:only-child):last-child[class^="gr6-"]:after, aside main > .aside-floor main > .gr-row:first-child:not(:only-child) > :not(:only-child):last-child[class^="gr6-"]:after, aside main > .gr-row main > .aside-floor:first-child:not(:only-child) > :not(:only-child):last-child[class^="gr6-"]:after, aside main > .aside-floor:first-child:not(:only-child) > :not(:only-child):last-child[class^="gr6-"]:after, main > .gr-row:first-child:not(:only-child) > :only-child[class^="gr6-"]:after, aside main > .aside-floor main > .gr-row:first-child:not(:only-child) > :only-child[class^="gr6-"]:after, main > .gr-row aside main > .aside-floor:first-child:not(:only-child) > :only-child[class^="gr6-"]:after, aside main > .gr-row main > .aside-floor:first-child:not(:only-child) > :only-child[class^="gr6-"]:after, aside main > .aside-floor:first-child:not(:only-child) > :only-child[class^="gr6-"]:after {
+    main > .gr-row:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:after, aside main > .aside-floor main > .gr-row:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:after, #page-welcome main.welcome-board > div main > .gr-row:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:after, aside main > .gr-row main > .aside-floor:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:after, aside main > .aside-floor:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:after, #page-welcome main.welcome-board > div aside main > .aside-floor:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:after, aside #page-welcome main.welcome-board > div main > .aside-floor:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:after, #page-welcome main > .gr-row main.welcome-board > div:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:after, #page-welcome aside main > .aside-floor main.welcome-board > div:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:after, #page-welcome main.welcome-board > div:first-child:not(:only-child) > :not(:only-child):first-child[class^="gr6-"]:after, main > .gr-row:first-child:not(:only-child) > :not(:only-child):last-child[class^="gr6-"]:after, aside main > .aside-floor main > .gr-row:first-child:not(:only-child) > :not(:only-child):last-child[class^="gr6-"]:after, #page-welcome main.welcome-board > div main > .gr-row:first-child:not(:only-child) > :not(:only-child):last-child[class^="gr6-"]:after, aside main > .gr-row main > .aside-floor:first-child:not(:only-child) > :not(:only-child):last-child[class^="gr6-"]:after, aside main > .aside-floor:first-child:not(:only-child) > :not(:only-child):last-child[class^="gr6-"]:after, #page-welcome main.welcome-board > div aside main > .aside-floor:first-child:not(:only-child) > :not(:only-child):last-child[class^="gr6-"]:after, aside #page-welcome main.welcome-board > div main > .aside-floor:first-child:not(:only-child) > :not(:only-child):last-child[class^="gr6-"]:after, #page-welcome main > .gr-row main.welcome-board > div:first-child:not(:only-child) > :not(:only-child):last-child[class^="gr6-"]:after, #page-welcome aside main > .aside-floor main.welcome-board > div:first-child:not(:only-child) > :not(:only-child):last-child[class^="gr6-"]:after, #page-welcome main.welcome-board > div:first-child:not(:only-child) > :not(:only-child):last-child[class^="gr6-"]:after, main > .gr-row:first-child:not(:only-child) > :only-child[class^="gr6-"]:after, aside main > .aside-floor main > .gr-row:first-child:not(:only-child) > :only-child[class^="gr6-"]:after, #page-welcome main.welcome-board > div main > .gr-row:first-child:not(:only-child) > :only-child[class^="gr6-"]:after, main > .gr-row aside main > .aside-floor:first-child:not(:only-child) > :only-child[class^="gr6-"]:after, aside main > .gr-row main > .aside-floor:first-child:not(:only-child) > :only-child[class^="gr6-"]:after, aside main > .aside-floor:first-child:not(:only-child) > :only-child[class^="gr6-"]:after, #page-welcome main.welcome-board > div aside main > .aside-floor:first-child:not(:only-child) > :only-child[class^="gr6-"]:after, aside #page-welcome main.welcome-board > div main > .aside-floor:first-child:not(:only-child) > :only-child[class^="gr6-"]:after, #page-welcome main > .gr-row main.welcome-board > div:first-child:not(:only-child) > :only-child[class^="gr6-"]:after, #page-welcome aside main > .aside-floor main.welcome-board > div:first-child:not(:only-child) > :only-child[class^="gr6-"]:after, #page-welcome main.welcome-board > div:first-child:not(:only-child) > :only-child[class^="gr6-"]:after {
       content: '';
       position: absolute;
       height: 1px;
       background-color: rgba(255, 255, 255, 0.3); }
-    main > .gr-row, aside main > .aside-floor {
+    main > .gr-row, aside main > .aside-floor, #page-welcome main.welcome-board > div {
       border: red 1px solid; }
-      main > .gr-row > [class^="gr6-"], aside main > .aside-floor > [class^="gr6-"] {
+      main > .gr-row > [class^="gr6-"], aside main > .aside-floor > [class^="gr6-"], #page-welcome main.welcome-board > div > [class^="gr6-"] {
         position: relative;
         height: 100%;
         border: red 1px solid; }
-    main > .gr-row:first-child:not(:only-child), aside main > .aside-floor:first-child:not(:only-child) {
+    main > .gr-row:first-child:not(:only-child), aside main > .aside-floor:first-child:not(:only-child), #page-welcome main.welcome-board > div:first-child:not(:only-child) {
       border: none; }
-      main > .gr-row:first-child:not(:only-child) > [class^="gr6-"]:first-child:not(:only-child), aside main > .aside-floor:first-child:not(:only-child) > [class^="gr6-"]:first-child:not(:only-child) {
+      main > .gr-row:first-child:not(:only-child) > [class^="gr6-"]:first-child:not(:only-child), aside main > .aside-floor:first-child:not(:only-child) > [class^="gr6-"]:first-child:not(:only-child), #page-welcome main.welcome-board > div:first-child:not(:only-child) > [class^="gr6-"]:first-child:not(:only-child) {
         border: none; }
-        main > .gr-row:first-child:not(:only-child) > [class^="gr6-"]:first-child:not(:only-child):after, aside main > .aside-floor:first-child:not(:only-child) > [class^="gr6-"]:first-child:not(:only-child):after {
+        main > .gr-row:first-child:not(:only-child) > [class^="gr6-"]:first-child:not(:only-child):after, aside main > .aside-floor:first-child:not(:only-child) > [class^="gr6-"]:first-child:not(:only-child):after, #page-welcome main.welcome-board > div:first-child:not(:only-child) > [class^="gr6-"]:first-child:not(:only-child):after {
           left: 40px;
           right: 0;
           bottom: 0; }
-        main > .gr-row:first-child:not(:only-child) > [class^="gr6-"]:first-child:not(:only-child):before, aside main > .aside-floor:first-child:not(:only-child) > [class^="gr6-"]:first-child:not(:only-child):before {
+        main > .gr-row:first-child:not(:only-child) > [class^="gr6-"]:first-child:not(:only-child):before, aside main > .aside-floor:first-child:not(:only-child) > [class^="gr6-"]:first-child:not(:only-child):before, #page-welcome main.welcome-board > div:first-child:not(:only-child) > [class^="gr6-"]:first-child:not(:only-child):before {
           right: 0;
           top: 40px;
           bottom: 0; }
-      main > .gr-row:first-child:not(:only-child) > [class^="gr6-"]:last-child:not(:only-child), aside main > .aside-floor:first-child:not(:only-child) > [class^="gr6-"]:last-child:not(:only-child) {
+      main > .gr-row:first-child:not(:only-child) > [class^="gr6-"]:last-child:not(:only-child), aside main > .aside-floor:first-child:not(:only-child) > [class^="gr6-"]:last-child:not(:only-child), #page-welcome main.welcome-board > div:first-child:not(:only-child) > [class^="gr6-"]:last-child:not(:only-child) {
         border: none; }
-        main > .gr-row:first-child:not(:only-child) > [class^="gr6-"]:last-child:not(:only-child):after, aside main > .aside-floor:first-child:not(:only-child) > [class^="gr6-"]:last-child:not(:only-child):after {
+        main > .gr-row:first-child:not(:only-child) > [class^="gr6-"]:last-child:not(:only-child):after, aside main > .aside-floor:first-child:not(:only-child) > [class^="gr6-"]:last-child:not(:only-child):after, #page-welcome main.welcome-board > div:first-child:not(:only-child) > [class^="gr6-"]:last-child:not(:only-child):after {
           left: 0;
           right: 40px;
           bottom: 0; }
-      main > .gr-row:first-child:not(:only-child) > [class^="gr6-"]:only-child, aside main > .aside-floor:first-child:not(:only-child) > [class^="gr6-"]:only-child {
+      main > .gr-row:first-child:not(:only-child) > [class^="gr6-"]:only-child, aside main > .aside-floor:first-child:not(:only-child) > [class^="gr6-"]:only-child, #page-welcome main.welcome-board > div:first-child:not(:only-child) > [class^="gr6-"]:only-child {
         border: none; }
-        main > .gr-row:first-child:not(:only-child) > [class^="gr6-"]:only-child:after, aside main > .aside-floor:first-child:not(:only-child) > [class^="gr6-"]:only-child:after {
+        main > .gr-row:first-child:not(:only-child) > [class^="gr6-"]:only-child:after, aside main > .aside-floor:first-child:not(:only-child) > [class^="gr6-"]:only-child:after, #page-welcome main.welcome-board > div:first-child:not(:only-child) > [class^="gr6-"]:only-child:after {
           left: 40px;
           right: 40px;
           bottom: 0; }
-    main > .gr-row:last-child:not(:only-child), aside main > .aside-floor:last-child:not(:only-child) {
+    main > .gr-row:last-child:not(:only-child), aside main > .aside-floor:last-child:not(:only-child), #page-welcome main.welcome-board > div:last-child:not(:only-child) {
       border: none; }
-      main > .gr-row:last-child:not(:only-child) > [class^="gr6-"], aside main > .aside-floor:last-child:not(:only-child) > [class^="gr6-"] {
+      main > .gr-row:last-child:not(:only-child) > [class^="gr6-"], aside main > .aside-floor:last-child:not(:only-child) > [class^="gr6-"], #page-welcome main.welcome-board > div:last-child:not(:only-child) > [class^="gr6-"] {
         border: none; }
-      main > .gr-row:last-child:not(:only-child) > [class^="gr6-"]:not(:last-child), aside main > .aside-floor:last-child:not(:only-child) > [class^="gr6-"]:not(:last-child) {
+      main > .gr-row:last-child:not(:only-child) > [class^="gr6-"]:not(:last-child), aside main > .aside-floor:last-child:not(:only-child) > [class^="gr6-"]:not(:last-child), #page-welcome main.welcome-board > div:last-child:not(:only-child) > [class^="gr6-"]:not(:last-child) {
         border: none; }
-        main > .gr-row:last-child:not(:only-child) > [class^="gr6-"]:not(:last-child):before, aside main > .aside-floor:last-child:not(:only-child) > [class^="gr6-"]:not(:last-child):before {
+        main > .gr-row:last-child:not(:only-child) > [class^="gr6-"]:not(:last-child):before, aside main > .aside-floor:last-child:not(:only-child) > [class^="gr6-"]:not(:last-child):before, #page-welcome main.welcome-board > div:last-child:not(:only-child) > [class^="gr6-"]:not(:last-child):before {
           right: 0;
           top: 0;
           bottom: 40px; }
-    main > .gr-row:only-child, aside main > .aside-floor:only-child {
+    main > .gr-row:only-child, aside main > .aside-floor:only-child, #page-welcome main.welcome-board > div:only-child {
       border: none; }
-      main > .gr-row:only-child > [class^="gr6-"], aside main > .aside-floor:only-child > [class^="gr6-"] {
+      main > .gr-row:only-child > [class^="gr6-"], aside main > .aside-floor:only-child > [class^="gr6-"], #page-welcome main.welcome-board > div:only-child > [class^="gr6-"] {
         border: none; }
 
 .columns-spacer {
@@ -2033,19 +2039,167 @@ table {
     height: 66px;
     line-height: 66px; }
   table td {
-    font-family: "museo_sans100", Arial, Sans-Serif;
-    font-weight: normal; }
-    table td.time-info {
+    font-family: "museo_sans100", Arial, Sans-Serif; }
+    table td.main-td {
+      font-family: "museo_sans500", Arial, Sans-Serif; }
+    table td.time-info, table td.calendar-info {
       position: relative;
       padding-left: 50px; }
-      table td.time-info:before {
+      table td.time-info:before, table td.calendar-info:before {
         position: absolute;
         left: 0;
         top: 44%;
         -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
                 transform: translateY(-50%);
-        background-image: url("../mm/time.png");
         content: '';
         width: 40px;
         height: 40px; }
+    table td.calendar-info:before {
+      background-image: url("../mm/calendar.png"); }
+    table td.time-info:before {
+      background-image: url("../mm/time.png"); }
+
+.heavy-border {
+  border: white 10px solid;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.6) 6px 6px 12px;
+          box-shadow: rgba(0, 0, 0, 0.6) 6px 6px 12px; }
+
+#page-meteo > .gr-row, aside #page-meteo > .aside-floor, #page-welcome .welcome-board#page-meteo > div {
+  height: 100%; }
+
+#page-meteo .meteo-today__icon {
+  height: 100%;
+  padding-right: 80px;
+  text-align: right;
+  vertical-align: middle; }
+  #page-meteo .meteo-today__icon i {
+    font-size: 260px; }
+
+#page-meteo .meteo-today__desc p {
+  font-size: 50px;
+  font-family: "museo_sans100", Arial, Sans-Serif; }
+  #page-meteo .meteo-today__desc p em {
+    font-family: "museo_sans500", Arial, Sans-Serif; }
+
+#page-meteo .meteo-trend {
+  padding: 0 60px; }
+  #page-meteo .meteo-trend ul {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid white; }
+    #page-meteo .meteo-trend ul > li {
+      position: absolute;
+      top: 0;
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 100%;
+              flex: 1 1 100%;
+      height: 70px; }
+      #page-meteo .meteo-trend ul > li .meteo-trend__icon, #page-meteo .meteo-trend ul > li .meteo-trend__clock {
+        opacity: .3; }
+      #page-meteo .meteo-trend ul > li.meteo-trend--active .meteo-trend__icon, #page-meteo .meteo-trend ul > li.meteo-trend--active .meteo-trend__clock {
+        opacity: 1; }
+      #page-meteo .meteo-trend ul > li:nth-child(1) {
+        left: 0; }
+      #page-meteo .meteo-trend ul > li:nth-child(2) {
+        left: 25%; }
+      #page-meteo .meteo-trend ul > li:nth-child(3) {
+        left: 50%; }
+      #page-meteo .meteo-trend ul > li:nth-child(4) {
+        left: 75%; }
+      #page-meteo .meteo-trend ul > li:nth-child(5) {
+        left: 100%; }
+      #page-meteo .meteo-trend ul > li:before {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        display: block;
+        content: '';
+        width: 8px;
+        height: 8px;
+        background-color: white;
+        border-radius: 50%; }
+    #page-meteo .meteo-trend ul .meteo-trend__icon, #page-meteo .meteo-trend ul .meteo-trend__clock {
+      display: inline-block;
+      position: absolute; }
+    #page-meteo .meteo-trend ul .meteo-trend__icon {
+      top: 0;
+      left: 0;
+      width: 80px;
+      height: 80px;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      font-size: 60px;
+      text-align: center; }
+    #page-meteo .meteo-trend ul .meteo-trend__clock {
+      top: 90px;
+      left: 0;
+      -webkit-transform: translate(-50%, 0);
+          -ms-transform: translate(-50%, 0);
+              transform: translate(-50%, 0);
+      font-family: "museo_sans100", Arial, Sans-Serif;
+      font-size: 30px; }
+
+#page-welcome .welcome-board > div {
+  position: relative;
+  width: 100%; }
+  #page-welcome .welcome-board > div > .welcome-board__who, #page-welcome .welcome-board > div > .welcome-board__message {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle; }
+
+#page-welcome .welcome-board .welcome-board__who {
+  display: block;
+  font-size: 50px;
+  font-family: "museo_sans500", Arial, Sans-Serif;
+  padding-right: 40px;
+  text-align: right;
+  text-shadow: rgba(255, 255, 255, 0.4) 1px 0 6px; }
+
+#page-welcome .welcome-board .welcome-board__message {
+  font-size: 44px; }
+  #page-welcome .welcome-board .welcome-board__message small {
+    display: block;
+    margin-top: -6px;
+    font-family: "museo_sans100", Arial, Sans-Serif;
+    font-size: 32px; }
+
+#page-meeting header {
+  margin: 30px 0; }
+  #page-meeting header > * {
+    vertical-align: top; }
+  #page-meeting header .room-picture {
+    padding-right: 60px;
+    text-align: right; }
+  #page-meeting header .room-info {
+    padding-top: 20px; }
+  #page-meeting header .room-status--ok, #page-meeting header .room-status--ko {
+    font-family: "museo_sans100", Arial, Sans-Serif; }
+    #page-meeting header .room-status--ok:before, #page-meeting header .room-status--ko:before {
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+      content: '';
+      margin: -2px 12px 0 0;
+      border-radius: 50% 0 50% 0; }
+  #page-meeting header .room-status--ok:before {
+    background-color: #4fc4e8; }
+  #page-meeting header .room-status--ko:before {
+    background-color: #e5515f; }

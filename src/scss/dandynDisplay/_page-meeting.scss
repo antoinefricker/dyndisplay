@@ -1,0 +1,46 @@
+#page-meeting{
+	
+	header{
+		margin: 30px 0;
+		& > *{
+			vertical-align: top;
+		}
+		
+		[class*="gr6-"]{
+			
+		}
+		
+		.room-picture{
+			padding-right: 60px;
+			text-align: right;
+		}
+		.room-info{
+			padding-top: 20px;
+		}
+		
+		.room-status--ok, .room-status--ko{
+			font-family: $museo_sans100;
+			
+			&:before{
+				
+				display: inline-block;
+				width: 26px;
+				height: 26px;
+				content: '';
+				margin: -2px 12px 0 0;
+				
+				border-radius: 50% 0 50% 0;
+			}
+		}
+		.room-status--ok{
+			&:before{
+				background-color: $color-blue;
+			}
+		}
+		.room-status--ko{
+			&:before{
+				background-color: $color-red;
+			}
+		}
+	}
+}

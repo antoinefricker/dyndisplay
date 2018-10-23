@@ -17,7 +17,7 @@ $all-gr-cell: '';
 @for $gr-index from 1 through $gr-cols{
 	@if($gr-index < $gr-cols){
 		.gr6-#{$gr-index}{
-			width: 100% / $gr-cols * $gr-index;
+			width: 100% / $gr-cols * $gr-index !important;
 			content: 'gr6-#{$gr-index}';
 		}
 	}
@@ -29,5 +29,5 @@ $all-gr-cell: '';
 }
 
 #{$all-gr-cell}{
-	@extend .gr6-cell;
+	display: table-cell;
 }

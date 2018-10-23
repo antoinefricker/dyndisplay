@@ -1,0 +1,39 @@
+#page-welcome {
+	
+	.welcome-board {
+		
+		& > div{
+			position: relative;
+			width: 100%;
+			
+			@extend .gr-row;
+			
+			& > .welcome-board__who, & > .welcome-board__message{
+				position: relative;
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+		.welcome-board__who {
+			@extend .gr6-2;
+			display: block;
+			
+			font-size: 50px;
+			font-family: $museo_sans500;
+			padding-right: 40px;
+			text-align: right;
+			
+			text-shadow: rgba(white, .4) 1px 0 6px;
+		}
+		.welcome-board__message {
+			@extend .gr6-4;
+			font-size: 44px;
+			small {
+				display: block;
+				margin-top: -6px;
+				font-family: $museo_sans100;
+				font-size: 32px;
+			}
+		}
+	}
+}

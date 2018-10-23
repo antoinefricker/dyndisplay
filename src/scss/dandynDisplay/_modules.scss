@@ -263,9 +263,12 @@ table {
 	}
 	td {
 		font-family: $museo_sans100;
-		font-weight: normal;
 		
-		&.time-info{
+		&.main-td{
+			font-family: $museo_sans500;
+		}
+		
+		&.time-info, &.calendar-info {
 			$icon-size: 40px;
 			
 			position: relative;
@@ -275,12 +278,27 @@ table {
 				left: 0;
 				top: 44%;
 				transform: translateY(-50%);
-				background-image: url('../mm/time.png');
 				
 				content: '';
 				width: $icon-size;
 				height: $icon-size;
 			}
 		}
+		
+		&.calendar-info {
+			&:before{
+				background-image: url('../mm/calendar.png');
+			}
+		}
+		&.time-info {
+			&:before{
+				background-image: url('../mm/time.png');
+			}
+		}
 	}
+}
+
+.heavy-border{
+	border: white 10px solid;
+	box-shadow: rgba(#000, .6) 6px 6px 12px;
 }
